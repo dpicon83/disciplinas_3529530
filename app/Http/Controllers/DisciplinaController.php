@@ -14,7 +14,11 @@ class DisciplinaController extends Controller
      */
     public function index()
     {
-        //
+        $disciplinas = Disciplina::all();
+        // o primeiro parâmetro do view indica o nome da pasta e o nome do arquivo
+        // seria etão a pasta disciplinas e o arquivo index.blade.php
+        // O compact envia o array acima para a view. Poderia ser passado via array mesmo
+        return view('disciplinas.index', compact('disciplinas'));
     }
 
     /**
