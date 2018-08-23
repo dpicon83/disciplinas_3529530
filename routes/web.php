@@ -12,4 +12,6 @@
 */
 
 Route::get('/', 'DisciplinaController@index');
+
+// Tudo  o que for disciplinas procura o controler DisciplinaController
 Route::resource('disciplinas', 'DisciplinaController');
